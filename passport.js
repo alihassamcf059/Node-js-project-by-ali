@@ -37,7 +37,7 @@ passport.use(new LocalStrategy({
 passport.use(new FacebookStrategy({
     clientID: '612822675590167',
     clientSecret: 'dcb63fc3264a53bc54496cad1ab51da6',
-    callbackURL: 'http://localhost:3000/auth/facebook/callback',
+    callbackURL: 'https://salty-bayou-80249.herokuapp.com/auth/facebook/callback',
     profileFields: ['id', 'displayName', 'email']
   },
   function(token, refreshToken, profile, done) {
